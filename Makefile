@@ -7,6 +7,9 @@ open:
 build:
 	bundle exec fastlane ios build
 
+lint:
+	bundle exec fastlane ios lint
+
 test:
 	bundle exec fastlane ios tests
 

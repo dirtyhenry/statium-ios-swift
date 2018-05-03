@@ -13,8 +13,8 @@
 		00BACDF0209BA58D009BB801 /* statium_ios_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00BACDEE209BA58D009BB801 /* statium_ios_swift.xcdatamodeld */; };
 		00BACDF2209BA590009BB801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BACDF1209BA590009BB801 /* Assets.xcassets */; };
 		00BACDF5209BA590009BB801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BACDF3209BA590009BB801 /* LaunchScreen.storyboard */; };
-		00BACE00209BA590009BB801 /* statium_ios_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACDFF209BA590009BB801 /* statium_ios_swiftTests.swift */; };
-		00BACE0B209BA590009BB801 /* statium_ios_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACE0A209BA590009BB801 /* statium_ios_swiftUITests.swift */; };
+		00BACE00209BA590009BB801 /* DefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACDFF209BA590009BB801 /* DefaultTests.swift */; };
+		00BACE0B209BA590009BB801 /* DefaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACE0A209BA590009BB801 /* DefaultUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		00BACDF4209BA590009BB801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BACDF6209BA590009BB801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BACDFB209BA590009BB801 /* statium-ios-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "statium-ios-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00BACDFF209BA590009BB801 /* statium_ios_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statium_ios_swiftTests.swift; sourceTree = "<group>"; };
+		00BACDFF209BA590009BB801 /* DefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTests.swift; sourceTree = "<group>"; };
 		00BACE01209BA590009BB801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BACE06209BA590009BB801 /* statium-ios-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "statium-ios-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00BACE0A209BA590009BB801 /* statium_ios_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statium_ios_swiftUITests.swift; sourceTree = "<group>"; };
+		00BACE0A209BA590009BB801 /* DefaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUITests.swift; sourceTree = "<group>"; };
 		00BACE0C209BA590009BB801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,7 @@
 		00BACDFE209BA590009BB801 /* statium-ios-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				00BACDFF209BA590009BB801 /* statium_ios_swiftTests.swift */,
+				00BACDFF209BA590009BB801 /* DefaultTests.swift */,
 				00BACE01209BA590009BB801 /* Info.plist */,
 			);
 			path = "statium-ios-swiftTests";
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				005D1C03209BAC8100E3721F /* SnapshotHelper.swift */,
-				00BACE0A209BA590009BB801 /* statium_ios_swiftUITests.swift */,
+				00BACE0A209BA590009BB801 /* DefaultUITests.swift */,
 				00BACE0C209BA590009BB801 /* Info.plist */,
 			);
 			path = "statium-ios-swiftUITests";
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00BACE00209BA590009BB801 /* statium_ios_swiftTests.swift in Sources */,
+				00BACE00209BA590009BB801 /* DefaultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00BACE0B209BA590009BB801 /* statium_ios_swiftUITests.swift in Sources */,
+				00BACE0B209BA590009BB801 /* DefaultUITests.swift in Sources */,
 				005D1C04209BAC8200E3721F /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

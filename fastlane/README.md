@@ -26,6 +26,11 @@ Build app
 fastlane ios tests
 ```
 Run unit tests
+### ios lint
+```
+fastlane ios lint
+```
+Lint code
 ### ios screenshots
 ```
 fastlane ios screenshots

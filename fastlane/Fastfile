@@ -26,6 +26,14 @@ platform :ios do
     run_tests(scheme: "statium-ios-swift")
   end
 
+  desc "Lint code"
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      path: 'statium-ios-swift'
+    )
+  end
+
   desc "Generate new localized screenshots"
   lane :screenshots do
     capture_screenshots(scheme: "statium-ios-swift-UITests")
