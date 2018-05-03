@@ -7,6 +7,9 @@ open:
 build:
 	bundle exec fastlane ios build
 
+docs:
+	bundle exec jazzy
+
 lint:
 	bundle exec fastlane ios lint
 

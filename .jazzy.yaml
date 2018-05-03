@@ -1,0 +1,6 @@
+author: Statium
+author_url: http://statium.io
+github_url: https://github.com/Bootstragram/statium-ios-swift
+clean: true
+output: docs
+min_acl: internal
