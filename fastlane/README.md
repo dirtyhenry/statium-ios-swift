@@ -31,11 +31,6 @@ Run unit tests
 fastlane ios lint
 ```
 Lint code
-### ios jazzy
-```
-fastlane ios jazzy
-```
-Generate documentation
 ### ios screenshots
 ```
 fastlane ios screenshots
