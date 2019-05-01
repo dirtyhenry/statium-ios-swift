@@ -19,4 +19,4 @@ test:
 screenshots:
 	bundle exec fastlane ios screenshots
 
-.PHONY: build
+.PHONY: build, docs
