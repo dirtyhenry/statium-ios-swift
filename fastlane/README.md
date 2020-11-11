@@ -36,6 +36,11 @@ Lint code
 fastlane ios screenshots
 ```
 Generate new localized screenshots
+### ios manage_signing
+```
+fastlane ios manage_signing
+```
+Manage signing abilities, including devices, certificates, and provisioning profiles
 
 ----
 

@@ -80,3 +80,6 @@ docs
 
 # Ignore the Environment.xcconfig file except the sample one.
 Environment.xcconfig
+
+# Ignore the devices.txt file.
+devices.txt
