@@ -1,7 +1,4 @@
 # frozen_string_literal: true
 
-app_identifier('com.bootstragram.statiumios.dev') # The bundle identifier of your app
-# apple_id("[[APPLE_ID]]") # Your Apple email address
-
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
+# The bundle identifier of your app
+app_identifier('io.statium.ios.dev')

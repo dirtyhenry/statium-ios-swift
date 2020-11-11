@@ -73,3 +73,7 @@ fastlane/test_output
 fastlane-build/
 # Ignore the Jazzy's output
 docs
+
+# Ignore all dotenv files except the sample one.
+.env*
+!.env.sample
