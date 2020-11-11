@@ -1,0 +1,12 @@
+// Environment.xcconfig
+// This file contains custom build settings for the project.
+
+// Packaging
+PRODUCT_BUNDLE_IDENTIFIER = tld.bar.foo.dev
+PRODUCT_NAME = statium-ios-swift
+
+// Signing
+CODE_SIGN_IDENTITY = Apple Development
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM = XXXXXXXXXX
+PROVISIONING_PROFILE_SPECIFIER = match Development tld.bar.foo.dev

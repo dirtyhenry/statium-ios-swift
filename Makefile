@@ -20,4 +20,7 @@ test:
 screenshots:
 	bundle exec fastlane ios screenshots
 
+manage-signing:
+	bundle exec fastlane ios manage_signing
+
 .PHONY: build, docs

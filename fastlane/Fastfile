@@ -17,6 +17,7 @@
 
 default_platform(:ios)
 
+# rubocop:disable Metrics/BlockLength
 platform :ios do
   desc 'Build app'
   lane :build do
@@ -40,4 +41,15 @@ platform :ios do
   lane :screenshots do
     capture_screenshots(scheme: 'statium-ios-swift-UITests')
   end
+
+  desc 'Manage signing abilities, including devices, certificates, and provisioning profiles'
+  lane :manage_signing do
+    register_devices(
+      devices_file: './devices.txt'
+    )
+    sync_code_signing(
+      force_for_new_devices: true
+    )
+  end
 end
+# rubocop:enable Metrics/BlockLength
