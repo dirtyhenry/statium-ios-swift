@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # For more information about this configuration visit
 # https://docs.fastlane.tools/actions/gym/#gymfile
 
@@ -6,8 +8,8 @@
 
 # Remove the # in front of the line to enable the option
 
-scheme("statium-ios-swift")
+scheme('statium-ios-swift')
 
 # sdk("iphoneos9.0")
 
-output_directory("./fastlane-build")
+output_directory('./fastlane-build')

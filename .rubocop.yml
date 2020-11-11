@@ -1,0 +1,22 @@
+---
+inherit_mode:
+  merge:
+    - Include
+
+AllCops:
+  NewCops: enable
+  Include:
+    - "fastlane/*file"
+
+Naming/FileName:
+  Exclude:
+    - "fastlane/Appfile"
+    - "fastlane/Fastfile"
+    - "fastlane/Gymfile"
+    - "fastlane/Matchfile"
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 15

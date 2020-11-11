@@ -11,6 +11,7 @@ docs:
 	bundle exec jazzy
 
 lint:
+	bundle exec rubocop
 	bundle exec fastlane ios lint
 
 test:
