@@ -77,3 +77,6 @@ docs
 # Ignore all dotenv files except the sample one.
 .env*
 !.env.sample
+
+# Ignore the Environment.xcconfig file except the sample one.
+Environment.xcconfig
