@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TinyNetworking",
+        "repositoryURL": "https://github.com/dirtyhenry/tiny-networking",
+        "state": {
+          "branch": null,
+          "revision": "64195becfbb70af35f85b93eb2b806eb85eb6395",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

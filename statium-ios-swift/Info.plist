@@ -39,5 +39,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>FOOTBALL_DATA_API_AUTH_TOKEN</key>
+	<string>$(FOOTBALL_DATA_API_AUTH_TOKEN)</string>
+	<key>FOOTBALL_DATA_API_PLAN</key>
+	<string>$(FOOTBALL_DATA_API_PLAN)</string>
 </dict>
 </plist>
