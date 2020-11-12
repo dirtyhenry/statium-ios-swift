@@ -11,24 +11,21 @@ class FootballDataAPITests: XCTestCase {
         }
 
         let jsonData = try Data(contentsOf: jsonURL)
-        let endpoint = FootballData(authToken: "").fetchCompetitions()
+        let endpoint = FootballData.new().fetchCompetitions()
         let result = try endpoint.parse(jsonData, nil).get()
         XCTAssertEqual(result.count, 12)
     }
-
-    func testPerformanceExample() throws {
+    
+    func testFetchSeasonsEndpoint() throws {
         let bundle = Bundle(for: Self.self)
         
-        guard let jsonURL = bundle.url(forResource: "List_Competitions-1605183896583", withExtension: "json") else {
+        guard let jsonURL = bundle.url(forResource: "List_French_Ligue_1-1605217279524", withExtension: "json") else {
             fatalError("Resource URL could not be found.")
         }
 
         let jsonData = try Data(contentsOf: jsonURL)
-        let endpoint = FootballData(authToken: "").fetchCompetitions()
-
-        self.measure {
-            let result = try! endpoint.parse(jsonData, nil).get()
-        }
+        let endpoint = FootballData.new().fetchSeasons(of: "FL1")
+        let result = try endpoint.parse(jsonData, nil).get()
+        XCTAssertEqual(result.name, "Ligue 1")
     }
-
 }

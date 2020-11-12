@@ -5,6 +5,10 @@ struct FootballData {
     let authToken: String
     let plan: Plan
     
+    var authHeader: [String: String] {
+        ["X-Auth-Token": FootballDataAPIConfiguration.authToken]
+        }
+    
     init(authToken: String, plan: Plan) {
         self.authToken = authToken
         self.plan = plan
@@ -22,6 +26,19 @@ struct FootballData {
         }
 
         return Endpoint<Competitions>(json: .get, url: url)
+    }
+    
+    func fetchSeasons(of competitionCode: String) -> Endpoint<Competition> {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.football-data.org"
+        components.path = "/v2/competitions/\(competitionCode)"
+
+        guard let url = components.url else {
+            fatalError("Couldn't build URL")
+        }
+
+        return Endpoint<Competition>(json: .get, url: url, headers: authHeader)
     }
 }
 
