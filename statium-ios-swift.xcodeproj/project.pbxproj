@@ -90,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A0B72F255DE2F30027A59C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		00B281E8255D5FED0031260E /* FootballDataAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				00B281E8255D5FED0031260E /* FootballDataAPI */,
+				00A0B72F255DE2F30027A59C /* ViewControllers */,
 				00BACDE7209BA58D009BB801 /* AppDelegate.swift */,
 				00B28208255D6C8F0031260E /* Configuration.swift */,
-				0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */,
 				00BACDF1209BA590009BB801 /* Assets.xcassets */,
 				00BACDF3209BA590009BB801 /* LaunchScreen.storyboard */,
 				00BACDF6209BA590009BB801 /* Info.plist */,
