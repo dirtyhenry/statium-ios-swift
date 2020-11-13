@@ -10,6 +10,8 @@
 		0041AA89255C56AE0093779F /* CompetitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */; };
 		0041AA92255C58600093779F /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 0041AA91255C58600093779F /* TinyNetworking */; };
 		005D1C04209BAC8200E3721F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D1C03209BAC8100E3721F /* SnapshotHelper.swift */; };
+		00A0B731255DE3330027A59C /* SeasonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A0B730255DE3330027A59C /* SeasonTableViewController.swift */; };
+		00A0B73C255DE38F0027A59C /* List_French_Ligue_1-1605217279524.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A0B73B255DE38F0027A59C /* List_French_Ligue_1-1605217279524.json */; };
 		00B281EA255D60060031260E /* FootballDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B281E9255D60060031260E /* FootballDataAPI.swift */; };
 		00B281F2255D60580031260E /* FootballDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B281F1255D60580031260E /* FootballDataModel.swift */; };
 		00B281F8255D60900031260E /* FootballDataAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B281F7255D60900031260E /* FootballDataAPITests.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionTableViewController.swift; sourceTree = "<group>"; };
 		005D1C03209BAC8100E3721F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		00A0B730255DE3330027A59C /* SeasonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewController.swift; sourceTree = "<group>"; };
+		00A0B73B255DE38F0027A59C /* List_French_Ligue_1-1605217279524.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "List_French_Ligue_1-1605217279524.json"; sourceTree = "<group>"; };
 		00B281E9255D60060031260E /* FootballDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataAPI.swift; sourceTree = "<group>"; };
 		00B281F1255D60580031260E /* FootballDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataModel.swift; sourceTree = "<group>"; };
 		00B281F7255D60900031260E /* FootballDataAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataAPITests.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A0B72F255DE2F30027A59C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */,
+				00A0B730255DE3330027A59C /* SeasonTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		00B281E8255D5FED0031260E /* FootballDataAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				00B28200255D61480031260E /* List_Competitions-1605183896583.json */,
+				00A0B73B255DE38F0027A59C /* List_French_Ligue_1-1605217279524.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -141,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				00B281E8255D5FED0031260E /* FootballDataAPI */,
+				00A0B72F255DE2F30027A59C /* ViewControllers */,
 				00BACDE7209BA58D009BB801 /* AppDelegate.swift */,
 				00B28208255D6C8F0031260E /* Configuration.swift */,
-				0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */,
 				00BACDF1209BA590009BB801 /* Assets.xcassets */,
 				00BACDF3209BA590009BB801 /* LaunchScreen.storyboard */,
 				00BACDF6209BA590009BB801 /* Info.plist */,
@@ -295,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A0B73C255DE38F0027A59C /* List_French_Ligue_1-1605217279524.json in Resources */,
 				00B28201255D61480031260E /* List_Competitions-1605183896583.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +333,7 @@
 				00BACDE8209BA58D009BB801 /* AppDelegate.swift in Sources */,
 				00B281F2255D60580031260E /* FootballDataModel.swift in Sources */,
 				00BACDF0209BA58D009BB801 /* statium_ios_swift.xcdatamodeld in Sources */,
+				00A0B731255DE3330027A59C /* SeasonTableViewController.swift in Sources */,
 				00B281EA255D60060031260E /* FootballDataAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,97 @@
+{
+	"id": 2015,
+	"area": {
+		"id": 2081,
+		"name": "France"
+	},
+	"name": "Ligue 1",
+	"code": "FL1",
+	"emblemUrl": null,
+	"plan": "TIER_ONE",
+	"currentSeason": {
+		"id": 596,
+		"startDate": "2020-08-22",
+		"endDate": "2021-05-23",
+		"currentMatchday": 11,
+		"winner": null
+	},
+	"seasons": [
+		{
+			"id": 596,
+			"startDate": "2020-08-22",
+			"endDate": "2021-05-23",
+			"currentMatchday": 11,
+			"winner": null
+		},
+		{
+			"id": 499,
+			"startDate": "2019-08-09",
+			"endDate": "2020-05-31",
+			"currentMatchday": 38,
+			"winner": null
+		},
+		{
+			"id": 177,
+			"startDate": "2018-08-10",
+			"endDate": "2019-05-25",
+			"currentMatchday": 38,
+			"winner": null
+		},
+		{
+			"id": 17,
+			"startDate": "2017-08-04",
+			"endDate": "2018-05-27",
+			"currentMatchday": 38,
+			"winner": {
+				"id": 524,
+				"name": "Paris Saint-Germain FC",
+				"shortName": "PSG",
+				"tla": "PSG",
+				"crestUrl": "https://crests.football-data.org/524.svg"
+			}
+		},
+		{
+			"id": 333,
+			"startDate": "2016-08-12",
+			"endDate": "2017-05-20",
+			"currentMatchday": null,
+			"winner": null
+		},
+		{
+			"id": 334,
+			"startDate": "2015-08-07",
+			"endDate": "2016-05-14",
+			"currentMatchday": null,
+			"winner": null
+		},
+		{
+			"id": 335,
+			"startDate": "2014-08-08",
+			"endDate": "2015-05-23",
+			"currentMatchday": null,
+			"winner": null
+		},
+		{
+			"id": 336,
+			"startDate": "2013-08-09",
+			"endDate": "2014-05-17",
+			"currentMatchday": null,
+			"winner": null
+		},
+		{
+			"id": 337,
+			"startDate": "2012-08-10",
+			"endDate": "2013-05-26",
+			"currentMatchday": null,
+			"winner": null
+		},
+		{
+			"id": 338,
+			"startDate": "2011-08-06",
+			"endDate": "2012-05-20",
+			"currentMatchday": null,
+			"winner": null
+		}
+	],
+	"lastUpdated": "2020-11-09T02:40:06Z"
+}

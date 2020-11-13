@@ -1,7 +1,7 @@
 import UIKit
 import TinyNetworking
 
-class CompetitionTableViewController: UITableViewController {
+final class CompetitionTableViewController: UITableViewController {
     var competitions: Competitions? = nil {
         didSet {
             DispatchQueue.main.async {
@@ -41,6 +41,13 @@ class CompetitionTableViewController: UITableViewController {
         
         res.textLabel?.text = "\(flag) - \(name)"
         return res
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let competitionCode = competitions?.competitions[indexPath.row].code {
+            let newVC = SeasonTableViewController(competitionCode: competitionCode)
+            show(newVC, sender: self)
+        }
     }
 }
 
