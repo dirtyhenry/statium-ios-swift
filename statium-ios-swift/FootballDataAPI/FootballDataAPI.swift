@@ -15,30 +15,29 @@ struct FootballData {
     }
     
     func fetchCompetitions() -> Endpoint<Competitions> {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "api.football-data.org"
-        components.path = "/v2/competitions"
-        components.queryItems = [URLQueryItem(name: "plan", value: plan.rawValue)]
-
-        guard let url = components.url else {
-            fatalError("Couldn't build URL")
-        }
-
-        return Endpoint<Competitions>(json: .get, url: url)
+        return Endpoint<Competitions>(json: .get, url: url(withPath: "/v2/competitions", queryItems: [URLQueryItem(name: "plan", value: plan.rawValue)]))
     }
     
     func fetchSeasons(of competitionCode: String) -> Endpoint<Competition> {
+        return Endpoint<Competition>(json: .get, url: url(withPath: "/v2/competitions/\(competitionCode)", queryItems: [URLQueryItem(name: "plan", value: plan.rawValue)]), headers: authHeader)
+    }
+    
+    func fetchMatches(of competitionCode: String) -> Endpoint<Matches> {
+        return Endpoint<Matches>(json: .get, url: url(withPath: "/v2/competitions/\(competitionCode)/matches"), headers: authHeader)
+    }
+    
+    private func url(withPath path: String, queryItems: [URLQueryItem]? = nil) -> URL {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.football-data.org"
-        components.path = "/v2/competitions/\(competitionCode)"
+        components.path = path
+        components.queryItems = queryItems
 
         guard let url = components.url else {
-            fatalError("Couldn't build URL")
+            fatalError("Couldn't build URL.")
         }
-
-        return Endpoint<Competition>(json: .get, url: url, headers: authHeader)
+        
+        return url
     }
 }
 
