@@ -45,7 +45,7 @@ final class CompetitionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let competitionCode = competitions?.competitions[indexPath.row].code {
-            let newVC = SeasonTableViewController(competitionCode: competitionCode)
+            let newVC = GameTableViewController(competitionCode: competitionCode)
             show(newVC, sender: self)
         }
     }
