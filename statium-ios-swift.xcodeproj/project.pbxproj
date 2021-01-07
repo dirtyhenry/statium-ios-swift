@@ -23,6 +23,7 @@
 		00BACDF5209BA590009BB801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BACDF3209BA590009BB801 /* LaunchScreen.storyboard */; };
 		00BACE00209BA590009BB801 /* DefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACDFF209BA590009BB801 /* DefaultTests.swift */; };
 		00BACE0B209BA590009BB801 /* DefaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BACE0A209BA590009BB801 /* DefaultUITests.swift */; };
+		00C2152425A79D84007ECEC7 /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2152325A79D84007ECEC7 /* GameTableViewController.swift */; };
 		00EA73302563F76E00C2F5A8 /* Ligue_1_2020-2021_Calendar-1605615579666.json in Resources */ = {isa = PBXBuildFile; fileRef = 00EA732F2563F76E00C2F5A8 /* Ligue_1_2020-2021_Calendar-1605615579666.json */; };
 		00EA73382563F7D900C2F5A8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA73372563F7D900C2F5A8 /* Utils.swift */; };
 		00EBC0B025A7A13C0076B6AC /* FootballDataModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EBC0AF25A7A13C0076B6AC /* FootballDataModelExtensions.swift */; };
@@ -69,6 +70,7 @@
 		00BACE06209BA590009BB801 /* statium-ios-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "statium-ios-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BACE0A209BA590009BB801 /* DefaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUITests.swift; sourceTree = "<group>"; };
 		00BACE0C209BA590009BB801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C2152325A79D84007ECEC7 /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
 		00EA732F2563F76E00C2F5A8 /* Ligue_1_2020-2021_Calendar-1605615579666.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ligue_1_2020-2021_Calendar-1605615579666.json"; sourceTree = "<group>"; };
 		00EA73372563F7D900C2F5A8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		00EBC0AF25A7A13C0076B6AC /* FootballDataModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataModelExtensions.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				0041AA88255C56AE0093779F /* CompetitionTableViewController.swift */,
 				00A0B730255DE3330027A59C /* SeasonTableViewController.swift */,
+				00C2152325A79D84007ECEC7 /* GameTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				00EBC0B025A7A13C0076B6AC /* FootballDataModelExtensions.swift in Sources */,
 				00B281F2255D60580031260E /* FootballDataModel.swift in Sources */,
 				00BACDF0209BA58D009BB801 /* statium_ios_swift.xcdatamodeld in Sources */,
+				00C2152425A79D84007ECEC7 /* GameTableViewController.swift in Sources */,
 				00A0B731255DE3330027A59C /* SeasonTableViewController.swift in Sources */,
 				00B281EA255D60060031260E /* FootballDataAPI.swift in Sources */,
 			);

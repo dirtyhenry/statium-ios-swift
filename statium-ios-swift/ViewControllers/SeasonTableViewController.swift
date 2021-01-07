@@ -57,4 +57,9 @@ final class SeasonTableViewController: UITableViewController {
         res.textLabel?.text = "\(startDate) - \(endDate) \(String(describing: winner))"
         return res
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let newVC = GameTableViewController(competitionCode: competitionCode)
+            show(newVC, sender: self)
+    }
 }
